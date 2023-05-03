@@ -1,0 +1,40 @@
+﻿@inherits DisplayEmployeeBase
+
+@*EN*@
+@*This component does not have @page directive. We intentionally left it out, because we are going to use this component only as a child component. We don't want this to be a routable component i.e we don't want to be able to reach this component by using a URL in the browser.
+This component binds to the Employee property to display the employee details. It also uses the ShowFooter boolean property to show and hide the footer.
+The values for these 2 properties (Employee and ShowFooter) will be passed by the parent component (EmployeeList component)*@
+@*GE*@
+@*Diese Komponente hat keine @page-Direktive. Wir haben es bewusst weggelassen, da wir diese Komponente nur als untergeordnete Komponente verwenden werden. Wir wollen nicht, dass dies eine routingfähige Komponente ist, d.h. wir wollen diese Komponente nicht über eine URL im Browser erreichen können.
+Diese Komponente wird an die Employee-Eigenschaft gebunden, um die Mitarbeiterdetails anzuzeigen. Es verwendet auch die boolesche Eigenschaft ShowFooter, um die Fußzeile anzuzeigen und auszublenden.
+Die Werte für diese beiden Eigenschaften (Employee und ShowFooter) werden von der übergeordneten Komponente (EmployeeList-Komponente) übergeben.*@
+@*HU*@
+@*Ennek az összetevőnek nincs @page irányelve. Szándékosan kihagytuk, mert ezt az összetevőt csak gyermekkomponensként fogjuk használni. Nem akarjuk, hogy ez egy irányítható összetevő legyen, azaz nem akarjuk, hogy ezt az összetevőt egy URL-cím használatával érhessük el a böngészőben.
+Ez az összetevő az Alkalmazott tulajdonsághoz kötődik az alkalmazott adatainak megjelenítéséhez. A ShowFooter logikai tulajdonságot is használja a lábléc megjelenítéséhez és elrejtéséhez.
+Ennek a 2 tulajdonságnak (Employee és ShowFooter) az értékeit a szülőösszetevő (EmployeeList összetevő) adja át*@
+
+<div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+    <div class="card-header">
+        <h3>
+            <input type="checkbox" checked="@IsSelected" @onchange="CheckBoxChanged" />
+            @Employee.FirstName @Employee.LastName
+        </h3>
+    </div>
+    <img class="card-img-top imageThumbnail" src="@Employee.PhotoPath" />
+    @if (ShowFooter)
+    {
+        <div class="card-footer text-center">
+            <a href="@($"employeedetails/{Employee.EmployeeId}")" 
+               class="btn btn-primary m-1">View</a>
+
+            <a href="@($"editemployee/{Employee.EmployeeId}")"
+                class="btn btn-primary m-1">Edit</a>
+
+            @*<a href="#" class="btn btn-danger m-1">Delete</a>*@
+            <button type="button" class="btn btn-danger m-1" 
+                    @onclick="Delete_Click">
+                Delete
+            </button>
+        </div>
+    }
+</div>

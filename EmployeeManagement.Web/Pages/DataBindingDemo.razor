@@ -1,0 +1,52 @@
+﻿@*@page "/databindingdemo"
+@inherits DataBindingDemoBase*@
+
+<h1>Data Binding Demo</h1>
+<hr />
+<h3>One Way Data Binding</h3>
+
+@*<div>
+   <b>Name :</b> @Name
+</div>
+<div>
+    <b>Name with salutation:</b> @(Gender == "Male" ? $"Mr. {Name}" : $"Miss. {Name}")
+</div>
+<div>
+    <b>Name :</b> <input value="@Name" />
+</div>
+<div>
+    <b>Name :</b> <input value="@Name" @onchange="@(e => { Name = e.Value.ToString(); })" />
+</div>
+<div>
+    <b>Name :</b> <input @bind="Name" />
+</div>*@
+@*EN*@
+@*Event parameter with two way data binding
+What if we do not want to wait, until the input element loses focus. As the value in the input element is being changed, we want the component class property to be updated. 
+This can be achieved by specifying the event name in the two way data binding. To specify the event name we use the event parameter as shown in the example below. In this case we are binding to input event. This is raised as the value is being changed.*@
+@*GE*@
+@*Ereignisparameter mit bidirektionaler Datenbindung
+Was ist, wenn wir nicht warten wollen, bis das Eingabeelement den Fokus verliert? Da der Wert im Eingabeelement geändert wird, möchten wir, dass die Klasseneigenschaft der Komponente aktualisiert wird.
+Dies kann erreicht werden, indem der Ereignisname in der bidirektionalen Datenbindung angegeben wird. Um den Ereignisnamen anzugeben, verwenden wir den Ereignisparameter, wie im folgenden Beispiel gezeigt. In diesem Fall sind wir an Input Event gebunden. Dies wird erhöht, wenn der Wert geändert wird.*@
+@*HU*@
+@*Eseményparaméter kétirányú adatkötéssel
+Mi van, ha nem akarunk várni, amíg a bemeneti elem elveszíti a fókuszt. Mivel a bemeneti elem értéke megváltozik, frissíteni szeretnénk a component class tulajdonságot.
+Ez úgy érhető el, hogy megadja az esemény nevét a kétirányú adatkötésben. Az esemény nevének megadásához használjuk a esemény paramétert az alábbi példában látható módon. Ebben az esetben kötelezzük magunkat Bemenet esemény. Ez az érték változásával növekszik.*@
+@*<div>
+    <b>Name :</b> <input @bind="Name" @bind:event="oninput" />
+</div>
+<div>
+    <b>Colour :</b> <input @bind="Colour" />
+</div>
+<div @bind-style="Colour" @bind-style:event="onchange">
+    <h3>The background colour of this text changes</h3>
+</div>
+<br />
+<br />
+<h1>Blazor two way data binding example</h1>
+<div>
+    <textarea @bind="Description" @bind:event="oninput" style="width:500px" />
+</div>
+<div>
+    Count : @Description.Length
+</div>*@

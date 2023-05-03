@@ -1,0 +1,62 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">EmployeeManagement.Web</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+             <NavLink class="nav-link" href="/editemployee" @onclick="HandleClick"
+                     Match="NavLinkMatch.All">
+                <span class="oi oi-file" aria-hidden="true"></span> Create
+            </NavLink>                                           
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="/editemployee/1"
+                     Match="NavLinkMatch.All">
+                <span class="oi oi-file" aria-hidden="true"></span> Edit
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    // EN
+    // Include event handleronclick
+    // NavigationManager.NavigateTo() method has a boolean parameter.forceLoad
+    // The default value is . Pass to this parameter.falsetrue
+    // This will by-pass client-side routing and forces the browser to load the component from the server.
+    // GE
+    // Event-Handleronclick einschließen
+    // Die Methode NavigationManager.NavigateTo() hat einen booleschen Parameter parameter.forceLoad
+    // Der Standardwert ist . Übergeben Sie diesen parameter.falsetrue
+    // Dies umgeht das clientseitige Routing und zwingt den Browser, die Komponente vom Server zu laden.
+    // HU
+    // Eseménykezelő belefoglalásaonclick
+    // NavigationManager.NavigateTo() metódus logikai paraméterrel rendelkezik.forceLoad
+    // Az alapértelmezett érték . Adja át ezt a paramétert.falsetrue
+    // Ez megkerüli az ügyféloldali útválasztást, és arra kényszeríti a böngészőt, hogy betöltse az összetevőt a kiszolgálóról.
+    @inject NavigationManager NavigationManager;
+    private void HandleClick()
+    {
+        NavigationManager.NavigateTo("editemployee", true);
+    }
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

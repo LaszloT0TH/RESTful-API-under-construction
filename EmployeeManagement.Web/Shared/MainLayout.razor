@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>EmployeeManagement.Web</PageTitle>
+
+@*For styling, include Boostrap container class on the <div> element that contains @Body*@
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <article class="content px-4 container">
+            @Body
+        </article>
+    </main>
+</div>

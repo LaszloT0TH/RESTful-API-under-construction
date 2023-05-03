@@ -1,0 +1,62 @@
+﻿@*EmployeeList.razor*@
+
+@page "/"
+@inherits EmployeeListBase
+@*The single forward slash in the page directive specifies to render this component when we navigate to the root application URL.
+@inherits attribute specifies the base class for this component.*@
+
+<h3>Employee List Selected Employees Count - @SelectedEmployeesCount</h3>
+@*EN*@
+@*As this parent component loops through the list of employees, it passes the employee object to the child component using the Employee property.
+A value for ShowFooter is also passed from the parent component to the child component.
+Remember both these properties (Employee and ShowFooter) are decorated with the [Parameter] attribute in the child component. This allows the parent component to pass values to those 2 properties*@
+@*GE*@
+@*Während diese übergeordnete Komponente die Mitarbeiterliste durchläuft, übergibt sie das Mitarbeiterobjekt mithilfe der Employee-Eigenschaft an die untergeordnete Komponente.
+Ein Wert für ShowFooter wird auch von der übergeordneten Komponente an die untergeordnete Komponente übergeben.
+Denken Sie daran, dass diese beiden Eigenschaften (Employee und ShowFooter) mit dem [Parameter]-Attribut in der untergeordneten Komponente ausgestattet sind. Dadurch kann die übergeordnete Komponente Werte an diese beiden Eigenschaften übergeben*@
+@*HU*@
+@*Ahogy ez a szülőösszetevő végighalad az alkalmazottak listáján, átadja az alkalmazotti objektumot a gyermekösszetevőnek az Employee tulajdonság használatával.
+A ShowFooter értékét a szülőösszetevő is átadja a gyermekösszetevőnek.
+Ne feledje, hogy mindkét tulajdonság (Employee és ShowFooter) a gyermekösszetevő [Parameter] attribútumával van díszítve. Ez lehetővé teszi, hogy a szülőösszetevő értékeket adjon át ennek a 2 tulajdonságnak.*@
+<input type="checkbox" id="showFooter" @bind="ShowFooter" />
+<label for="showFooter">Show Footer</label>
+@*EN
+While Employees property is null we see the loading spinner. As soon as the asynchronous operation is complete and Employees property is populated we see the list of Employees. We are using CSS animations to get the effect of a loading spinner. Place the following CSS in wwwroot/css/site.css file. To match the look and feel of the spinner with your application pages, you can change the css properties accordingly in the spinner class.*@
+@*GE
+Während die Employees-Eigenschaft null ist, sehen wir den Loading Spinner. Sobald die asynchrone Operation abgeschlossen ist und die Employees-Eigenschaft gefüllt ist, sehen wir die Liste der Employees. Wir verwenden CSS-Animationen, um den Effekt eines ladenden Spinners zu erzielen. Platzieren Sie das folgende CSS in der Datei wwwroot/css/site.css. Um das Erscheinungsbild des Spinners an Ihre Anwendungsseiten anzupassen, können Sie die CSS-Eigenschaften in der Spinner-Klasse entsprechend ändern.*@
+@*HU
+Míg az Alkalmazottak tulajdonság null, látjuk a betöltő pörgettyűt. Amint az aszinkron művelet befejeződött, és az Alkalmazottak tulajdonság ki van töltve, megjelenik az Alkalmazottak listája. CSS animációkat használunk a betöltő pörgettyű hatásának eléréséhez. Helyezze a következő CSS-t a wwwroot/css/site.css fájlba. Annak érdekében, hogy a pörgettyű megjelenése és működése megfeleljen az alkalmazás oldalainak, ennek megfelelően módosíthatja a css tulajdonságait a pörgettyű osztályban.*@
+@if (Employees == null)
+{
+    <div class="spinner"></div>
+}
+else{
+    <div class="card-deck">
+        @foreach (var employee in Employees)
+        {
+            <DisplayEmployee Employee="employee" ShowFooter="ShowFooter"
+                        OnEmployeeSelection="EmployeeSelectionChanged"
+                        OnEmployeeDeleted="EmployeeDeleted"></DisplayEmployee>
+
+            @*<DisplayEmployee OnEmployeeSelection="EmployeeSelectionChanged"></DisplayEmployee>*@
+            
+            @*<DisplayEmployee Employee="employee" ShowFooter="ShowFooter"></DisplayEmployee>*@
+            @*<div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+                <div class="card-header">
+                    <h3>@employee.FirstName  @employee.LastName</h3>
+                </div>
+
+                <img class="card-img-top imageThumbnail" src="@employee.PhotoPath" />
+
+
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary m-1">View</a>
+
+                    <a href="#" class="btn btn-primary m-1">Edit</a>
+
+                    <a href="#" class="btn btn-danger m-1">Delete</a>
+                </div>
+            </div>*@
+        }
+    </div>
+}
