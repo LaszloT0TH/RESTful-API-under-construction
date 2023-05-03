@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {}
+    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {
+    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
         "projectName": "EmployeeManagement.Api",
-        "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Api\\EmployeeManagement.Api.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Api\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
+              "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
+    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "projectName": "EmployeeManagement.Models",
-        "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

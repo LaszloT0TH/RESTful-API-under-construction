@@ -406,11 +406,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
       "projectName": "EmployeeManagement.Models",
-      "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\EmployeeManagement.Models.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Models\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

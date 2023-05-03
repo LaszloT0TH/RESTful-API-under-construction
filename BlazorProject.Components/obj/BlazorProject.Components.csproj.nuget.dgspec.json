@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\BlazorProject.Components.csproj": {}
+    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\BlazorProject.Components.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\BlazorProject.Components.csproj": {
+    "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\BlazorProject.Components.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\BlazorProject.Components.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\BlazorProject.Components.csproj",
         "projectName": "BlazorProject.Components",
-        "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\BlazorProject.Components.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\BlazorProject.Components.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

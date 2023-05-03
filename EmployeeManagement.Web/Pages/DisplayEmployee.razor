@@ -38,3 +38,6 @@ Ennek a 2 tulajdonságnak (Employee és ShowFooter) az értékeit a szülőössz
         </div>
     }
 </div>
+<Confirm @ref="DeleteConfirmation" ConfirmationChanged="ConfirmDelete_Click"
+         ConfirmationMessage=@($"Are you sure you want to delete \"{Employee.FirstName}\"")>
+</Confirm>

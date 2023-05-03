@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "vHs+pX//CQCUGIdO+OyQU3kbN2qXiKT0tNOyv5RMQUA=",
+  "Hash": "kkwRE+RaTBMHFbdhsC8tBdakMptRzkbwVZmBUt71ETU=",
   "Source": "EmployeeManagement.Web",
   "BasePath": "_content/EmployeeManagement.Web",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\BlazorProject.Components.csproj",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\BlazorProject.Components.csproj",
       "Version": 2,
       "Source": "BlazorProject.Components",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,24 +22,24 @@
     {
       "Name": "BlazorProject.Components\\wwwroot",
       "Source": "BlazorProject.Components",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\wwwroot\\",
       "BasePath": "_content/BlazorProject.Components",
       "Pattern": "**"
     },
     {
       "Name": "EmployeeManagement.Web\\wwwroot",
       "Source": "EmployeeManagement.Web",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorProject.Components.bundle.scp.css",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorProject.Components.bundle.scp.css",
       "SourceId": "BlazorProject.Components",
       "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BlazorProject.Components",
       "RelativePath": "BlazorProject.Components.bundle.scp.css",
       "AssetKind": "All",
@@ -50,13 +50,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorProject.Components.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BlazorProject.Components.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\wwwroot\\background.png",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\wwwroot\\background.png",
       "SourceId": "BlazorProject.Components",
       "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\wwwroot\\",
       "BasePath": "_content/BlazorProject.Components",
       "RelativePath": "background.png",
       "AssetKind": "All",
@@ -70,10 +70,10 @@
       "OriginalItemSpec": "wwwroot\\background.png"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\wwwroot\\exampleJsInterop.js",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\wwwroot\\exampleJsInterop.js",
       "SourceId": "BlazorProject.Components",
       "SourceType": "Project",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\BlazorProject.Components\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\BlazorProject.Components\\wwwroot\\",
       "BasePath": "_content/BlazorProject.Components",
       "RelativePath": "exampleJsInterop.js",
       "AssetKind": "All",
@@ -87,10 +87,10 @@
       "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EmployeeManagement.Web.styles.css",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EmployeeManagement.Web.styles.css",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "EmployeeManagement.Web.styles.css",
       "AssetKind": "All",
@@ -101,13 +101,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EmployeeManagement.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\EmployeeManagement.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EmployeeManagement.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EmployeeManagement.Web.bundle.scp.css",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "EmployeeManagement.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -118,13 +118,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EmployeeManagement.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\EmployeeManagement.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -138,10 +138,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -155,10 +155,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -172,10 +172,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -189,10 +189,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -223,10 +223,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -240,10 +240,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -257,10 +257,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -274,10 +274,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -291,10 +291,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -308,10 +308,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\css\\site.css",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -325,10 +325,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\favicon.ico",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -342,10 +342,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\images\\john.png",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\images\\john.png",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "images/john.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\john.png"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\images\\mary.png",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\images\\mary.png",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "images/mary.png",
       "AssetKind": "All",
@@ -376,10 +376,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mary.png"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\images\\nophoto.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\images\\nophoto.jpg",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "images/nophoto.jpg",
       "AssetKind": "All",
@@ -393,10 +393,10 @@
       "OriginalItemSpec": "wwwroot\\images\\nophoto.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\images\\sam.jpg",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\images\\sam.jpg",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "images/sam.jpg",
       "AssetKind": "All",
@@ -410,10 +410,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sam.jpg"
     },
     {
-      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\images\\sara.png",
+      "Identity": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\images\\sara.png",
       "SourceId": "EmployeeManagement.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\Blazor\\EmployeeManagement.Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\Apa pendrive\\C#\\RESTful-API-under-construction\\EmployeeManagement.Web\\wwwroot\\",
       "BasePath": "_content/EmployeeManagement.Web",
       "RelativePath": "images/sara.png",
       "AssetKind": "All",
