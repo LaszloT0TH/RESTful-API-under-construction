@@ -3,6 +3,27 @@
 
 @inherits EditEmployeeBase
 
+@*EN*@
+@*Blazor EditForm Component
+In Blazor a form is defined using component.EditForm
+The attribute specifies the data the form will bind to and work with.@Model
+In this example attribute value is , which is a property in the component class and carries the employee data the form will bind to and work with.Model Employee
+The component binds to using attribute. InputText Employee.FirstNamebind-value
+This attribute provides two way data-binding: @bind-Value="EditEmployeeModel.FirstName". This means, the value in the property of the object is displayed in the input element. If we make a change to the , by changing the value in the input element, property is automatcially updated with the changed value.FirstName Employee firstnameEmployee.FirstName*@
+@*GE*@
+@*Blazor EditForm-Komponente
+In Blazor wird ein Formular mithilfe von „component.EditForm“ definiert
+Das Attribut gibt die Daten an, an die das Formular bindet und mit denen es arbeitet.@Model
+In diesem Beispiel ist der Attributwert , was eine Eigenschaft in der Komponentenklasse ist und die Mitarbeiterdaten enthält, an die das Formular binden und mit denen es arbeiten wird. Model Employee
+Die Komponente bindet an das Attribut using. InputText Employee.FirstNamebind-value
+Dieses Attribut stellt eine bidirektionale Datenbindung bereit: @bind-Value="EditEmployeeModel.FirstName". Das heißt, der Wert in der Eigenschaft des Objekts wird im Eingabeelement angezeigt. Wenn wir eine Änderung an vornehmen, indem wir den Wert im Eingabeelement ändern, wird die Eigenschaft automatisch mit dem geänderten Wert aktualisiert. FirstName Employee firstnameEmployee.FirstName*@
+@*HU*@
+@*Blazor EditForm összetevő
+A Blazorban az űrlap a komponens használatával van definiálva.EditForm
+Az attribútum határozza meg azokat az adatokat, amelyekhez az űrlap kötést és munkát végez.@Model
+Ebben a példában az attribútum értéke , amely a component osztály tulajdonsága, és azokat az alkalmazotti adatokat hordozza, amelyekhez az űrlap kötődik, és amelyekkel dolgozni fog.Model Employee
+Az összetevő az attribútum használatával kötődik. InputText Employee.FirstNamebind-value
+Ez az attribútum kétirányú adatkötést biztosít: @bind-Value="EditEmployeeModel.FirstName". Ez azt jelenti, hogy az objektum tulajdonságában lévő érték megjelenik a bemeneti elemben. Ha módosítjuk a , a bemeneti elem értékének módosításával, a tulajdonság automatikusan frissül a módosított értékkel.FirstName Employee firstnameEmployee.FirstName*@
 <EditForm Model="@EditEmployeeModel" OnValidSubmit="HandleValidSubmit">
     <ObjectGraphDataAnnotationsValidator />
     <h3>@PageHeader</h3>
@@ -48,7 +69,47 @@
             <ValidationMessage For="@(() => EditEmployeeModel.ConfirmEmail)" />
         </div>
     </div>
-    <div class="form-group row">
+        @*EN*@
+        @*We use the component, to render an html elementInputSelectselect
+        Departments property in the component class carries the list of all departments to the view.
+        The loop, loops through the list and creates a element option for each department.foreachselect
+        The value for the option is the department id and the display text is the department name.
+        If the employee belongs to IT department, it should be selected. For this we use attribute. This attribute provides two-way data-binding i.e on the initial page load, the employee department is selected and if we change the selection, the newly selected department value is automatically passed to the property in the component class.@bind-ValueDepartmentId
+        Binding the select element to an integer is not supported and throws the following exception.
+        Microsoft.AspNetCore.Components.Forms.InputSelect`1[System.Int32] does not support the type 'System.Int32'
+        InputSelect does not support the type System.Int32. This is one of the common error you will encounter when binding a select element to integer.
+        Only String and Enum data types are supported. Out of the box, the built-in component only supports String and Enum data types. Integer is not supported. Since ASP.NET core is open source, we can see the source code of InputSelect on the following page.InputSelect
+        https://github.com/dotnet/aspnetcore/blob/58c13c312eabfb00fdb56c7e0f69813359d2fa9a/src/Components/Web/src/Forms/InputSelect.cs
+        The propery way to fix this is by creating a custom InputSelect element. The easiest way to do this by inheriting the built-in component and overriding method.InputSelectTryParseValueFromString()
+        String and Enum data types will still be supported, because in the block we are falling back to the base class implementation of method.integerELSETryParseValueFromString()*@
+        @*GE*@
+        @*Wir verwenden die Komponente, um ein HTML-Element InputSelectselect zu rendern
+        Die Eigenschaft Abteilungen in der Komponentenklasse überträgt die Liste aller Abteilungen in die Ansicht.
+        Die Schleife durchläuft die Liste und erstellt eine Elementoption für jede Abteilung. foreachselect
+        Der Wert für die Option ist die Abteilungs-ID und der Anzeigetext ist der Abteilungsname.
+        Wenn der Mitarbeiter zur IT-Abteilung gehört, sollte er ausgewählt werden. Dafür verwenden wir Attribute. Dieses Attribut bietet eine bidirektionale Datenbindung, d. h. beim anfänglichen Laden der Seite wird die Mitarbeiterabteilung ausgewählt, und wenn wir die Auswahl ändern, wird der neu ausgewählte Abteilungswert automatisch an die Eigenschaft in der Komponentenklasse @bind-ValueDepartmentId übergeben
+        Das Binden des select-Elements an eine Ganzzahl wird nicht unterstützt und löst die folgende Ausnahme aus.
+        Microsoft.AspNetCore.Components.Forms.InputSelect`1[System.Int32] unterstützt den Typ „System.Int32“ nicht
+        InputSelect unterstützt den Typ System.Int32 nicht. Dies ist einer der häufigsten Fehler, auf die Sie stoßen, wenn Sie ein ausgewähltes Element an eine ganze Zahl binden.
+        Es werden nur die Datentypen String und Enum unterstützt. Standardmäßig unterstützt die integrierte Komponente nur die Datentypen String und Enum. Ganzzahl wird nicht unterstützt. Da ASP.NET Core Open Source ist, können wir den Quellcode von InputSelect auf der folgenden Seite sehen.InputSelect
+        https://github.com/dotnet/aspnetcore/blob/58c13c312eabfb00fdb56c7e0f69813359d2fa9a/src/Components/Web/src/Forms/InputSelect.cs
+        Der richtige Weg, dies zu beheben, besteht darin, ein benutzerdefiniertes InputSelect-Element zu erstellen. Der einfachste Weg, dies zu tun, indem die eingebaute Komponente geerbt und die Methode überschrieben wird.InputSelectTryParseValueFromString()
+         String- und Enum-Datentypen werden weiterhin unterstützt, da wir im Block auf die Basisklassenimplementierung von method.integerELSETryParseValueFromString() zurückgreifen.*@
+        @*HU*@
+        @*A komponenst használjuk egy html elem megjelenítéséhezInputSelectselect
+        Departments A komponensosztály tulajdonsága az összes részleg listáját jeleníti meg a nézetben.
+        A hurok végigfut a listán, és létrehoz egy elemopciót minden részleg számára.foreachselect
+        A beállítás értéke a részlegazonosító, a megjelenített szöveg pedig a részleg neve.
+        Ha az alkalmazott informatikai részleghez tartozik, akkor azt ki kell választani. Ehhez attribútumot használunk. Ez az attribútum kétirányú adatkötést biztosít, azaz a kezdeti oldalbetöltéskor az alkalmazotti részleg kerül kiválasztásra, és ha megváltoztatjuk a kijelölést, az újonnan kiválasztott részlegérték automatikusan átkerül az összetevőosztály tulajdonságához.@bind-ValueDepartmentId
+        A select elem egész számhoz kötése nem támogatott, és a következő kivételt adja vissza.
+        A Microsoft.AspNetCore.Components.Forms.InputSelect'1[System.Int32] nem támogatja a "System.Int32" típust.
+        Az InputSelect nem támogatja a System.Int32 típust. Ez az egyik leggyakoribb hiba, amellyel akkor találkozhat, amikor egy select elemet egész számhoz köt.
+        Csak a String és az Enum adattípusok támogatottak. A beépített összetevő csak a karakterlánc és az enum adattípusokat támogatja. Az egész szám nem támogatott. Mivel ASP.NET mag nyílt forráskódú, a következő oldalon láthatjuk az InputSelect forráskódját.InputSelect
+        https://github.com/dotnet/aspnetcore/blob/58c13c312eabfb00fdb56c7e0f69813359d2fa9a/src/Components/Web/src/Forms/InputSelect.cs
+        Egyéni bemenetSelect
+Ennek megoldásának propery módja egy egyéni InputSelect elem létrehozása. Ennek legegyszerűbb módja a beépített összetevő és a felülbírálási módszer öröklése.InputSelectTryParseValueFromString()
+        A karakterlánc és az enum adattípusok továbbra is támogatottak lesznek, mert a blokkban visszaesünk a metódus alaposztály implementációjához.integerELSETryParseValueFromString()*@
+    <div class="form-group row">    
         <label for="department" class="col-sm-2 col-form-label">
             Department
         </label>

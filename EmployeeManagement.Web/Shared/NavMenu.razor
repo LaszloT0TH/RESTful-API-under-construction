@@ -9,23 +9,74 @@
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-             <NavLink class="nav-link" href="/editemployee" @onclick="HandleClick"
-                     Match="NavLinkMatch.All">
-                <span class="oi oi-file" aria-hidden="true"></span> Create
-            </NavLink>                                           
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="/editemployee/1"
-                     Match="NavLinkMatch.All">
-                <span class="oi oi-file" aria-hidden="true"></span> Edit
-            </NavLink>
-        </div>
+        @*EN*@
+        @*Blazor AuthorizeView component
+        In Blazor we use component to show or hide UI elements depending on whether the user is authorized to see it.AuthorizeView
+        In this example, component is used in it's simplest form, without any parameters (i.e roles or policies), so, it only checks if the user is authenticated.AuthorizeView
+        If the user is authenticated, then the content in component is displayed, otherwise,  the content in component is displayed.<Authorized><NotAuthorized>
+        CascadingAuthenticationState component
+        If you get the following error
+        InvalidOperationException: Authorization requires a cascading parameter of type Task<AuthenticationState>. Consider using CascadingAuthenticationState to supply this.
+        The error message is pretty good. It clearly tells us what needs to be done. Authentication state must be provided to the application and we do this by wrapping by the component with component. The component is in file.<Router><CascadingAuthenticationState><Router>App.razor*@
+        @*GE*@
+        @*Blazor AuthorizeView-Komponente
+        In Blazor verwenden wir Komponenten, um UI-Elemente anzuzeigen oder auszublenden, je nachdem, ob der Benutzer berechtigt ist, sie anzuzeigen. AuthorizeView
+        In diesem Beispiel wird die Komponente in ihrer einfachsten Form ohne Parameter (d. h. Rollen oder Richtlinien) verwendet, sodass nur überprüft wird, ob der Benutzer authentifiziert ist. AuthorizeView
+        Wenn der Benutzer authentifiziert ist, wird der Inhalt in der Komponente angezeigt, andernfalls wird der Inhalt in der Komponente angezeigt.<Autorisiert><NichtAutorisiert>
+        CascadingAuthenticationState-Komponente
+        Wenn Sie den folgenden Fehler erhalten
+        InvalidOperationException: Authorization requires a cascading parameter of type Task<AuthenticationState>. Consider using CascadingAuthenticationState to supply this.
+        InvalidOperationException: Die Autorisierung erfordert einen kaskadierenden Parameter vom Typ Task<AuthenticationState>. Erwägen Sie die Verwendung von CascadingAuthenticationState, um dies bereitzustellen.
+        Die Fehlermeldung ist ziemlich gut. Es sagt uns klar, was zu tun ist. Der Authentifizierungsstatus muss der Anwendung bereitgestellt werden, und wir tun dies, indem wir die Komponente mit der Komponente umschließen. Die Komponente befindet sich in file.<Router><CascadingAuthenticationState><Router>App.razor*@
+        @*HU*@
+        @*Blazor AuthorizeView összetevő
+        A Blazorban összetevőt használunk a felhasználói felület elemeinek megjelenítésére vagy elrejtésére attól függően, hogy a felhasználó jogosult-e megtekinteni.AuthorizeView
+        Ebben a példában az összetevő a legegyszerűbb formában van használva, paraméterek (azaz szerepkörök vagy szabályzatok) nélkül, így csak azt ellenőrzi, hogy a felhasználó hitelesítve van-e.AuthorizeView
+        Ha a felhasználó hitelesítve van, akkor az összetevő tartalma jelenik meg, ellenkező esetben az összetevő tartalma jelenik meg.<Authorized><NotAuthorized>
+        CascadingAuthenticationState összetevő
+        Ha a következő hibaüzenet jelenik meg
+        InvalidOperationException: Authorization requires a cascading parameter of type Task<AuthenticationState>. Consider using CascadingAuthenticationState to supply this.
+        InvalidOperationException: Az engedélyezéshez Task<AuthenticationState> típusú egymásra épülő paraméter szükséges. Fontolja meg a CascadingAuthenticationState használatát ennek biztosításához.
+        A hibaüzenet nagyon jó. Világosan megmondja, mit kell tennünk. A hitelesítési állapotot meg kell adni az alkalmazásnak, és ezt úgy tesszük, hogy az összetevőt összetevővel burkoljuk. Az összetevő fájlban van.<Router><CascadingAuthenticationState><Router>App.razor*@
+        <AuthorizeView>
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <span class="oi oi-home" aria-hidden="true"></span> Home
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                     <NavLink class="nav-link" href="/editemployee" @onclick="HandleClick"
+                             Match="NavLinkMatch.All">
+                        <span class="oi oi-file" aria-hidden="true"></span> Create
+                    </NavLink>                                           
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/editemployee/1"
+                             Match="NavLinkMatch.All">
+                        <span class="oi oi-file" aria-hidden="true"></span> Edit
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/identity/account/logout" Match="NavLinkMatch.All">
+                        <span class="oi oi-power-standby" aria-hidden="true"></span> Logout
+                    </NavLink>
+                </div>    
+        </Authorized>
+            <NotAuthorized>
+                @*EN*@
+                @*ASP.NET core identity login page is in . Areas and Pages folders are not required in the URL, so the URL path to get to the login page is*@
+                @*GE*@
+                @*ASP.NET-Kernidentitäts-Anmeldeseite ist in . Bereiche:Areas und Seitenordner:Pages sind in der URL nicht erforderlich, daher lautet der URL-Pfad zum Aufrufen der Anmeldeseite *@
+                @*EN*@
+                @*Az ASP.NET alapazonosító bejelentkezési oldala itt található. Területek:Areas és Oldalak:Pages mappák nem szükségesek az URL-ben, ezért a bejelentkezési oldal elérési URL-címe*@
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/identity/account/login" Match="NavLinkMatch.All">
+                        <span class="oi oi-lock-locked" aria-hidden="true"></span> Login
+                    </NavLink>
+                </div>
+            </NotAuthorized>
+        </AuthorizeView>
     </nav>
 </div>
 

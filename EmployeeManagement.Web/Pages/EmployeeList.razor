@@ -1,9 +1,68 @@
 ﻿@*EmployeeList.razor*@
 
 @page "/"
-@inherits EmployeeListBase
+
+@*EN*@
 @*The single forward slash in the page directive specifies to render this component when we navigate to the root application URL.
 @inherits attribute specifies the base class for this component.*@
+@*GE*@
+@*Der einzelne Schrägstrich in der Seitendirektive gibt an, dass diese Komponente gerendert wird, wenn wir zur Stammanwendungs-URL navigieren.
+Das @inherits-Attribut gibt die Basisklasse für diese Komponente an.*@
+@*HU*@
+@*Az oldalirányelv egyetlen előremutató perjele határozza meg, hogy ez az összetevő jelenjen meg, amikor a gyökéralkalmazás URL-jére navigálunk.
+Az @inherits attribútum adja meg ennek az összetevőnek az alaposztályát.*@
+@inherits EmployeeListBase
+
+@*EN*@
+@*Authorize attribute in Blazor and AuthorizeRouteView component
+In the following example, attribute is used in it's simplest form, without any parameters (i.e roles or policies), so, it only checks if the user is authenticated.[Authorize]
+If the user is authenticated, then the authorization is granted otherwise not.
+Blazor authorize attribute not working
+For the authorization to work as expected, along with the attribute we must also use component instead of component.[Authorize]AuthorizeRouteViewRouteView
+In file, use component instead of component.App.razor AuthorizeRouteView RouteView*@  
+@*GE*@
+@*Authorize-Attribut in Blazor und AuthorizeRouteView-Komponente
+Im folgenden Beispiel wird das Attribut in seiner einfachsten Form ohne Parameter (d. h. Rollen oder Richtlinien) verwendet, sodass nur überprüft wird, ob der Benutzer authentifiziert ist. [Autorisieren]
+Ist der Benutzer authentifiziert, so wird die Berechtigung ansonsten nicht erteilt.
+Verwenden Sie in der Datei component anstelle von component.App.razor AuthorizeRouteView statt RouteView.*@
+@*HU*@
+@*Attribútum engedélyezése a Blazorban és az AuthorizeRouteView összetevőben
+A következő példában az attribútum a legegyszerűbb formában használatos, paraméterek (azaz szerepkörök vagy szabályzatok) nélkül, így csak azt ellenőrzi, hogy a felhasználó hitelesítve van-e.[Authorize]
+Ha a felhasználó hitelesítve van, akkor az engedély egyébként nem.
+A fájlban az összetevőt használja a component.App.razor AuthorizeRouteView a RouteView helyett*@
+@attribute [Authorize]
+
+@*EN*@
+@*Role-based or Policy-based authorization
+The attribute also supports role-based and policy-based authorization. For role-based authorization, use the parameter:[Authorize]Roles
+@page "/"
+@attribute [Authorize(Roles = "administrator, manager")]
+<p>Only users in administrator or manager role are allowed access</p>
+For policy-based authorization, use the parameter:Policy
+@page "/"
+@attribute [Authorize(Policy = "admin-policy")]
+<p>Only users who satisfy admin-policy are allowed access</p>*@
+@*GE*@
+@*Rollenbasierte oder richtlinienbasierte Autorisierung
+Das Attribut unterstützt auch rollenbasierte und richtlinienbasierte Autorisierung. Verwenden Sie für die rollenbasierte Autorisierung den Parameter:[Authorize]Roles
+@Buchseite "/"
+@attribute [Authorize(Roles = "Administrator, Manager")]
+<p>Nur Benutzer mit Administrator- oder Managerrolle haben Zugriff</p>
+Verwenden Sie für die richtlinienbasierte Autorisierung den Parameter:Policy
+@Buchseite "/"
+@attribute [Authorize(Policy = "admin-policy")]
+<p>Nur Benutzern, die die Administratorrichtlinie erfüllen, wird der Zugriff gewährt</p>*@
+@*HU*@
+@*Szerep- vagy házirend-alapú engedélyezés
+Az attribútum támogatja a szerepköralapú és házirendalapú engedélyezést is. Szerepköralapú engedélyezéshez használja a következő paramétert:[Authorize]Roles
+@page "/"
+@attribute [Authorize(Roles = "administrator, manager")]
+<p>Only users in administrator or manager role are allowed access</p>
+Házirendalapú engedélyezéshez használja a következő paramétert:Policy
+@page "/"
+@attribute [Authorize(Policy = "admin-policy")]
+<p>Only users who satisfy admin-policy are allowed access</p>*@
+
 
 <h3>Employee List Selected Employees Count - @SelectedEmployeesCount</h3>
 @*EN*@

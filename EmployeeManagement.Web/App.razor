@@ -1,12 +1,29 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
-    <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
-    </Found>
-    <NotFound>
-        <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <p role="alert">Sorry, there's nothing at this address.</p>
-        </LayoutView>
-    </NotFound>
-</Router>
+﻿<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+                @*EN*@
+                @*Customize unauthorized content
+If access is not allowed, is the content that is displayed by default. However, we can customize this unauthorized content."Not authorized"*@
+                @*GE*@
+                @*Passen Sie nicht autorisierte Inhalte an
+Wenn der Zugriff nicht erlaubt ist, wird der Inhalt standardmäßig angezeigt. Wir können diesen nicht autorisierten Inhalt jedoch anpassen."Nicht autorisiert"*@
+                @*HU*@
+                @*Nem engedélyezett tartalom testreszabása
+Ha a hozzáférés nem engedélyezett, akkor az alapértelmezés szerint megjelenő tartalom. Ezt a jogosulatlan tartalmat azonban testreszabhatjuk."Not authorized"*@
+          @*<AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>*@
+            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+                <NotAuthorized>
+                    <p>Sorry, you're not authorized to reach this page.</p>
+                    <p>You may need to log in as a different user.</p>
+                </NotAuthorized>
+            </AuthorizeRouteView>
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>Not found</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p role="alert">Sorry, there's nothing at this address.</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>

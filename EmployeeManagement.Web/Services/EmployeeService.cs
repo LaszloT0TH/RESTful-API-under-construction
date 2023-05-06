@@ -1,7 +1,10 @@
 ﻿using EmployeeManagement.Models;
+using System.Text.Json;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Components;
 using Newtonsoft.Json;
+using System.Text;
+using System.Net.Http.Headers;
 
 namespace EmployeeManagement.Web.Services
 {
@@ -37,44 +40,55 @@ namespace EmployeeManagement.Web.Services
 
         public async Task<IEnumerable<Employee>> GetEmployees()
         {
-            //return await httpClient.GetFromJsonAsync<Employee[]>("api/employees");
-
-            // ----- or -------------------------------------
-
             // https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-6.0&fbclid=IwAR2svwvcl0NIVC0_Hvq4NfhlWsOMIm0f4YUrqnzbZD4oozYO_scT3fcUan0
-
             //httpClient.DefaultRequestHeaders.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
 
+            // Solution 1: using System.Text.Json;
+            //var response = await httpClient.GetAsync("api/employees");
+            //var responseContent = await response.Content.ReadAsStringAsync();
+            //var employees = JsonSerializer.Deserialize<Employee[]>(responseContent,
+            //        new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+            //return employees;
+
+            // Solution 2: using Newtonsoft.Json;
             var response = await httpClient.GetAsync("api/employees");
-
             var responseContent = await response.Content.ReadAsStringAsync();
-
             var employees = JsonConvert.DeserializeObject<Employee[]>(responseContent);
-
             return employees;
+
+            // Solution 3: using System.Net.Http.Json;
+            //return await httpClient.GetFromJsonAsync<Employee[]>("api/employees");
+
 
         }
 
         public async Task<Employee> GetEmployee(int id)
         {
-            //return await httpClient.GetFromJsonAsync<Employee>($"api/employees/{id}");
-
-            // --- or --------------------------------
             // https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-6.0&fbclid=IwAR2svwvcl0NIVC0_Hvq4NfhlWsOMIm0f4YUrqnzbZD4oozYO_scT3fcUan0
-
+            // https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-8.0
+            // https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpresponsemessage?view=net-8.0
             //httpClient.DefaultRequestHeaders.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
 
+            // Solution 1: using System.Text.Json;
+            //var response = await httpClient.GetAsync("api/employees/{id}");
+            //var responseContent = await response.Content.ReadAsStringAsync();
+            //var employees = JsonSerializer.Deserialize<Employee>(responseContent,
+            //        new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+            //return employees;
+
+            // Solution 2: using Newtonsoft.Json;
             var response = await httpClient.GetAsync("api/employees/{id}");
-
             var responseContent = await response.Content.ReadAsStringAsync();
+            var employees = JsonConvert.DeserializeObject<Employee>(responseContent);
+            return employees;
 
-            var employee = JsonConvert.DeserializeObject<Employee>(responseContent);
-
-            return employee;
+            // Solution 3: using System.Net.Http.Json;
+            //return await httpClient.GetFromJsonAsync<Employee>($"api/employees/{id}");
         }
 
         public async Task<Employee> UpdateEmployee(Employee updatedEmployee)
         {
+            #region Comment
             // https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-6.0&fbclid=IwAR2svwvcl0NIVC0_Hvq4NfhlWsOMIm0f4YUrqnzbZD4oozYO_scT3fcUan0
             // EN
             // Serializes the parameter to JSON using .TodoItemSystem.Text.Json
@@ -91,21 +105,33 @@ namespace EmployeeManagement.Web.Services
             // Létrehoz egy StringContent példányt a szerializált JSON csomagolásához a HTTP-kérés törzsében való küldéshez.
             // Meghívja a PostAsync metódust, hogy elküldje a JSON - tartalmat a megadott URL - címre.Ez egy relatív URL - cím, amely hozzá lesz adva a HttpClient.BaseAddress címhez.
             // Meghívja az EnsureSuccessStatusCode metódust, hogy kivételt dobjon, ha a válasz állapotkódja nem jelzi a sikert.
+            #endregion
+            // Solution 1: using System.Text.Json; PutAsJsonAsync
+            //var response = await httpClient.PutAsJsonAsync("api/employees", updatedEmployee);
+            //var responseContent = await response.Content.ReadAsStringAsync();
+            //var employee = JsonSerializer.Deserialize<Employee>(responseContent);
+            //return employee;
+
+            // Solution 2: using System.Text.Json; PutAsync
+            //var json = JsonSerializer.Serialize(updatedEmployee);
+            //var stringContent = new StringContent(json);
+            //var response = await httpClient.PutAsync("api/employees", stringContent);
+            //var responseContent = await response.Content.ReadAsStringAsync();
+            //var employee = JsonSerializer.Deserialize<Employee>(responseContent);
+            //return employee;
+
+            // Solution 3: using Newtonsoft.Json; PutAsync
             var json = JsonConvert.SerializeObject(updatedEmployee);
-
             var stringContent = new StringContent(json);
-            
             var response = await httpClient.PutAsync("api/employees", stringContent);
-
             var responseContent = await response.Content.ReadAsStringAsync();
-
             var employee = JsonConvert.DeserializeObject<Employee>(responseContent);
-
             return employee;
         }
 
         public async Task<Employee> CreateEmployee(Employee newEmployee)
         {
+            #region Comment
             // https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-6.0&fbclid=IwAR2svwvcl0NIVC0_Hvq4NfhlWsOMIm0f4YUrqnzbZD4oozYO_scT3fcUan0
             // EN
             // Serializes the parameter to JSON using .TodoItemSystem.Text.Json
@@ -122,16 +148,29 @@ namespace EmployeeManagement.Web.Services
             // Létrehoz egy StringContent példányt a szerializált JSON csomagolásához a HTTP-kérés törzsében való küldéshez.
             // Meghívja a PostAsync metódust, hogy elküldje a JSON - tartalmat a megadott URL - címre.Ez egy relatív URL - cím, amely hozzá lesz adva a HttpClient.BaseAddress címhez.
             // Meghívja az EnsureSuccessStatusCode metódust, hogy kivételt dobjon, ha a válasz állapotkódja nem jelzi a sikert.
+            //httpClient.DefaultRequestHeaders.Accept.Add(MediaTypeWithQualityHeaderValue.Parse("application/json"));
+            //https://stackoverflow.com/questions/70508587/status-400-from-webapi-when-calling-postasjsonasync-from-blazor-client
+            #endregion
+            // Solution 1: using System.Text.Json; PostAsJsonAsync
+            //var response = await httpClient.PostAsJsonAsync("api/employees", newEmployee);
+            //var responseContent = await response.Content.ReadAsStringAsync();
+            //var employee = JsonSerializer.Deserialize<Employee>(responseContent);
+            //return employee;
+
+            // Solution 2: using System.Text.Json; PostAsync
+            //var json = JsonSerializer.Serialize(newEmployee);
+            //var stringContent = new StringContent(json, Encoding.UTF8, "application/json");
+            //var response = await httpClient.PostAsync("api/employees", stringContent);
+            //var responseContent = await response.Content.ReadAsStringAsync();
+            //var employee = JsonSerializer.Deserialize<Employee>(responseContent);
+            //return employee;
+
+            // Solution 3: using Newtonsoft.Json; PostAsync
             var json = JsonConvert.SerializeObject(newEmployee);
-
-            var stringContent = new StringContent(json);
-
+            var stringContent = new StringContent(json, Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync("api/employees", stringContent);
-
             var responseContent = await response.Content.ReadAsStringAsync();
-
             var employee = JsonConvert.DeserializeObject<Employee>(responseContent);
-
             return employee;
         }
 
